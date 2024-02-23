@@ -1,11 +1,12 @@
 {
   "dependencies": {
+    "dotenv": "^16.4.5",
     "mongodb": "6.3"
   },
   "name": "sending",
   "version": "1.0.0",
   "description": "MERN applet to create D&D Sending spell messages.",
-  "main": "./src/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

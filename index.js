@@ -1,8 +1,7 @@
-
+require('dotenv').config();
 const { MongoClient, ServerApiVersion } = require('mongodb');
 
-const credentials = "C:/Certs/X509-cert-8641070843756739248.pem";
-
+const credentials = process.env.MONGO_CREDS;
 const client = new MongoClient('mongodb+srv://cluster0.jtmbxry.mongodb.net/?authSource=%24external&authMechanism=MONGODB-X509&retryWrites=true&w=majority&appName=Cluster0', {
   tlsCertificateKeyFile: credentials,
   serverApi: ServerApiVersion.v1
